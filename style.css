@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #fabdb9;
+}
+
+.isi img {
+  border: 6px black;
+  width: 250px;
+  height: 400px;
+  position: center;
+}
+
+h1 {
+  font-family: sans-serif;
+}
+
+input {
+  border-color: yellowgreen;
+  border-radius: 5px;
+  height: 30px;
+  justify-content: space-evenly;
+  width: 100px;
+}
+
+.isislide {
+  background-color: #9dcabb;
+  padding: 50px 0 50px 0;
+}
+
+/* untuk gambar slide */
+.content-slide {
+  max-width: 800px;
+  position: relative;
+  margin: auto;
+}
+
+.gambarslide {
+  display: none;
+}
+
+img {
+  vertical-align: center;
+  width: 100%;
+  height: 400px;
+}
+
+.previous,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  color: rgb(255, 254, 224);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.previous:hover,
+.next:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: rgb(0, 0, 0);
+}
+
+.text {
+  color: #fafafa;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.content-slide .nomorslide {
+  color: #ffffff;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+/* bagian navbar */
+.navbar {
+  color: rgb(202, 209, 207);
+  display: flex;
+  background-color: grey;
+  position: sticky;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: block;
+  text-align: center;
+  box-shadow: var(--box-shadow);
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: red;
+  transition: ease 0.5s all;
+  border-radius: 5px;
+  border: 1px salmon;
+  justify-content: space-evenly;
+}
+
+a:hover {
+  color: blueviolet;
+  transform: scale(1.1);
+  color: white;
+  background-color: black;
+  border: 1px solid white;
+}
+
+/* bagian form login */
+
+.container {
+  height: 30vh;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+
+.form {
+  position: absolute;
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.forms.form.login {
+  opacity: 0;
+  pointer-events: none;
+}
+
+header {
+  font-size: 28px;
+  font-weight: 600;
+  color: #232836;
+  text-align: center;
+}
+form {
+  margin-top: 0px;
+}
+.form .field {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 6px;
+}
+.field input,
+.field button {
+  height: 100%;
+  width: 100%;
+  border: none;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 6px;
+}
+.field input {
+  outline: none;
+  padding: 0 15px;
+  border: 1px solid#CACACA;
+}
+.field input:focus {
+  border-bottom-width: 2px;
+}
+
+.field button {
+  color: #fff;
+  background-color: black;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.field button:hover {
+  background-color: white;
+}
+
+.form a {
+  color: #0171d3;
+  text-decoration: none;
+}
+
+.form-content a:hover {
+  text-decoration: underline;
+}
